@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            background-color: rgb(45, 45, 85);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(50, 50, 128);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(178, 178, 214);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 80px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .first-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .first-section>div {
+            width: 30%;
+        }
+
+        .left-section {
+            font-size: 3rem;
+            margin: 70px 0;
+
+
+        }
+
+        .right-section img {
+            width: 80%;
+
+
+        }
+
+        .purple {
+            color: rgb(176, 176, 204);
+        }
+
+        .text-gray {
+            color: rgb(176, 176, 204);
+        }
+
+        #element {
+            color: rgb(176, 176, 204);
+        }
+
+        .second-section {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .second-section h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.9rem;
+        }
+
+        .past-experiences {
+            padding: 40px;
+            background-color: rgb(45, 45, 85);
+        }
+
+        .past-experiences h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .experience-item {
+            margin-bottom: 40px;
+        }
+
+        .experience,
+        .project,
+        .education,
+        .certification {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: rgb(50, 50, 128);
+            border-radius: 8px;
+        }
+
+        .experience h4,
+        .project h4,
+        .education h4,
+        .certification h4 {
+            font-size: 1.2rem;
+            color: rgb(176, 176, 204);
+        }
+
+        .company {
+            font-weight: bold;
+            color: rgb(176, 176, 204);
+        }
+
+        .dates {
+            font-style: italic;
+            color: rgb(176, 176, 204);
+        }
+
+        .role {
+            font-weight: bold;
+            color: rgb(176, 176, 204);
+        }
+
+        footer {
+            background-color: rgb(45, 45, 85);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: rgb(176, 176, 204);
+        }
+
+        .social-media {
+            margin-bottom: 20px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            display: inline-block;
+            color: palevioletred;
+        }
+
+        .social-media img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            transition: opacity 0.3s;
+        }
+
+        .social-media img:hover {
+            opacity: 0.7;
+        }
+
+        .footer-bottom {
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 799px) {
+            .right-section img {
+                display: none;
+                /* Hide the image */
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shafiq's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="left-section">
+                Hi,My name is<span class="purple"> Shafiq</span>.
+                <div>And I am a passionate </div>
+                <!-- <div>Web Developer.</div> -->
+                <span id="element"></span>
+            </div>
+            <div class="right-section">
+                <img src="developer.png" alt="image">
+            </div>
+        </section>
+        <hr>
+        <section class="past-experiences">
+            <h2>Past Experiences</h2>
+
+            <div class="experience-item">
+                <h3>Professional Experience</h3>
+                <div class="experience">
+                    <h4>Senior Web Developer</h4>
+                    <p class="company">ChainSoft Company</p>
+                    <p class="dates">Jan 2024 - Present</p>
+                    <p>Led a team of developers to create scalable web applications, improving user experience and
+                        system performance.</p>
+                </div>
+                <div class="experience">
+                    <h4>Web Developer</h4>
+                    <p class="company">Foxtail Agency Agency</p>
+                    <p class="dates">Jun 2023 - Dec 2023</p>
+                    <p>Developed client-side applications and enhanced websites with modern design and functionality.
+                    </p>
+                </div>
+                <!-- Add more experiences as needed -->
+            </div>
+
+            <div class="experience-item">
+                <h3>Significant Projects</h3>
+                <div class="project">
+                    <h4>Project Title 1</h4>
+                    <p class="role">Web Developer</p>
+                    <p>Description of the project and your contributions. Technologies used: HTML, CSS, JavaScript,
+                        React.</p>
+                </div>
+                <div class="project">
+                    <h4>Project Title 2</h4>
+                    <p class="role">Graphic Designer</p>
+                    <p>Description of the project and your contributions. Technologies used: Photoshop, Illustrator.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+
+            <div class="experience-item">
+                <h3>Education & Certifications</h3>
+                <div class="education">
+                    <h4>Bachelor's Degree in Software Engineering</h4>
+                    <p class="institution">University of IUB</p>
+                    <p class="dates">2014 - 2018</p>
+                </div>
+                <div class="certification">
+                    <h4>Certified Web Developer</h4>
+                    <p class="institution">Tech Institute</p>
+                    <p class="dates">2020</p>
+                </div>
+                <!-- Add more education or certifications as needed -->
+            </div>
+        </section>
+
+
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="social-media">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shafiq. All rights reserved.</p>
+                <p>Designed by Shafiq</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Graphic Designer.', 'Game Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
